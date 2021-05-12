@@ -1,0 +1,56 @@
+{
+    "name": "bulldots-bulletpoint/laravel-joyn",
+    "description": "Simple Laravel package for the Joyn API",
+    "keywords": [
+        "bulldots-bulletpoint",
+        "laravel-joyn"
+    ],
+    "homepage": "https://github.com/bulldots-bulletpoint/laravel-joyn",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Louise Schotte",
+            "email": "louise@bulldots.be",
+            "role": "Front & Back-End Developer"
+        },
+        {
+            "name": "Olivier Van de Velde",
+            "email": "olivier@bulldots.be",
+            "role": "Back-End Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "illuminate/support": "^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "BulldotsBulletpoint\\LaravelJoyn\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "BulldotsBulletpoint\\LaravelJoyn\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "BulldotsBulletpoint\\LaravelJoyn\\LaravelJoynServiceProvider"
+            ]
+        }
+    }
+}
